@@ -235,6 +235,117 @@ st.markdown(
             transition-duration: .01ms !important;
         }
     }
+
+    /* Keep every surface mint and all ordinary text high-contrast. */
+    :root {
+        --green: #2f7955;
+        --green-dark: #1d593c;
+        --green-pale: #dcefe1;
+        --ink: #173a29;
+        --muted: #365744;
+        --line: #b8d5c0;
+        --surface: #e8f4ea;
+    }
+    html, body, [data-testid="stAppViewContainer"], [data-testid="stMain"] {
+        background: #eaf4ec !important;
+        color: #173a29 !important;
+    }
+    .stApp {
+        background: #eaf4ec !important;
+        color: #173a29 !important;
+    }
+    .stApp p, .stApp li, .stApp strong, .stApp em,
+    .stApp [data-testid="stMarkdownContainer"],
+    .stApp [data-testid="stWidgetLabel"],
+    .stApp [data-testid="stCaptionContainer"],
+    .stApp [data-testid="stMetricLabel"],
+    .stApp [data-testid="stMetricValue"],
+    .stApp [data-testid="stAlert"] p,
+    .stApp [data-testid="stExpander"] summary,
+    .stApp [data-testid="stRadio"] label,
+    .stApp [data-testid="stCheckbox"] label {
+        color: #173a29 !important;
+    }
+    .stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp h5, .stApp h6 {
+        color: #173a29 !important;
+    }
+    .stApp [data-testid="stCaptionContainer"] p,
+    .stApp .stCaption,
+    .section-intro, .result-meta, .footer-note {
+        color: #365744 !important;
+    }
+    .hero {
+        background: linear-gradient(120deg, #2f7955 0%, #3b8b61 58%, #58a174 100%) !important;
+    }
+    .hero h1, .hero p, .hero .eyebrow {
+        color: #ffffff !important;
+    }
+    .hero .eyebrow { color: #e3f5e8 !important; }
+    div[data-testid="stForm"] {
+        background: #e2f0e5 !important;
+        border-color: #b8d5c0 !important;
+    }
+    div[data-testid="stForm"] [data-baseweb="select"] > div,
+    div[data-testid="stForm"] [data-baseweb="input"] > div,
+    div[data-testid="stForm"] [data-baseweb="textarea"] > div {
+        background: #f2f8f3 !important;
+        border-color: #9fbea8 !important;
+    }
+    div[data-testid="stForm"] input,
+    div[data-testid="stForm"] textarea,
+    div[data-testid="stForm"] [data-baseweb="select"] *,
+    div[data-testid="stForm"] [data-baseweb="tag"],
+    div[data-testid="stForm"] label {
+        color: #173a29 !important;
+        -webkit-text-fill-color: #173a29 !important;
+    }
+    div[data-testid="stForm"] input::placeholder,
+    div[data-testid="stForm"] textarea::placeholder {
+        color: #526e5c !important;
+        -webkit-text-fill-color: #526e5c !important;
+        opacity: 1 !important;
+    }
+    [data-baseweb="popover"], [data-baseweb="menu"],
+    [data-baseweb="popover"] ul, [data-baseweb="popover"] li {
+        background: #edf6ef !important;
+        color: #173a29 !important;
+    }
+    [data-baseweb="popover"] [role="option"],
+    [data-baseweb="menu"] [role="option"] {
+        background: #edf6ef !important;
+        color: #173a29 !important;
+    }
+    [data-baseweb="popover"] [role="option"]:hover,
+    [data-baseweb="menu"] [role="option"]:hover {
+        background: #d5eadb !important;
+        color: #173a29 !important;
+    }
+    .result-card {
+        background: #e4f1e7 !important;
+        border-color: #b8d5c0 !important;
+    }
+    .result-heading, .confidence { color: #173a29 !important; }
+    .confidence { background: #cfe7d5 !important; }
+    [data-testid="stSidebar"] {
+        background: #dcefe1 !important;
+    }
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] label,
+    [data-testid="stSidebar"] [data-testid="stMetricLabel"],
+    [data-testid="stSidebar"] [data-testid="stMetricValue"] {
+        color: #173a29 !important;
+    }
+    [data-testid="stSidebar"] [data-testid="stMetric"] {
+        background: #eaf4ec;
+        border: 1px solid #b8d5c0;
+        border-radius: 12px;
+        padding: .6rem .8rem;
+    }
+    [data-testid="stFormSubmitButton"] button {
+        background: #2f7955 !important;
+        border-color: #2f7955 !important;
+        color: #ffffff !important;
+    }
     </style>
     """,
     unsafe_allow_html=True,
