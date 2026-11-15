@@ -2,6 +2,10 @@
 
 A Streamlit plant-care diagnosis app for Pakistani home gardens.
 
+## Contributors
+
+- [Fatima Azfar](https://github.com/fatimaazfar4)
+
 ## Run locally
 
 1. Install Python 3.10 or later.
